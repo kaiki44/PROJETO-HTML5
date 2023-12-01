@@ -1,169 +1,117 @@
 <!DOCTYPE html>
+<html>
+
 <head>
-       <title>Client-Side: HTML5, CSS3, JavaScript | Desenvolvimento WEB: Conhecimento sem limite.</title>
-       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-       <meta http-equiv="content-language" content="pt" />
-       <meta name="description" content="No site Client-Side você vai encontrar artigos referentes ao
-       desenvolvimento web clientside como HTML5; JavaScript; CSS3; e jQuery" />
-       <meta name="keywords" content="JavaScript, CSS3, HTML5, jQuery" />
-       <meta name="author" content="Douglas Marcori" >
-       <script type="text/javascript" src="js/comportamento.js"></script>
-       <link rel="stylesheet" type="text/css" media="screen" href="css/estilos.css" />
-   </head>
-   <body>
-       <div id="geral">
-           <div id="cabecalho">
-               <div id="logotipo">
-                   <a href="/clientside/index.php">
-                       <img src="img/depo" title="Logo Client-Side" alt="Logo Client-Side" border="0" />
-                   </a>
-               </div>
-               <div id="menu">
-                   <ul>
-                       <li><a href="/clientside/index.php">Home</a></li>
-                       <li>HTML</li>
-                       <li>CSS</li>
-                       <li>JavaScript</li>
-                       <li>jQuery</li>
-                       <li>Acessibilidade</li>
-                       <li>Usabilidade</li>
-                       <li><a href="index.php?pag=fale-conosco">Contato</a></li>
-                   </ul>
-               </div>
-           </div>
-           <div id="corpo">
-               <? if($pag == ""){?>
-               <div id="destaques">
-                   <div id="destaques_top">
-                       <div id="destaque_top_esquerda">
-                           <h1>HTML é o novo HTML5</h1>
-                           <p>
-                           Em 2009, a WHATWG anunciou que a especificação do HTML5 estava em
-                           processo para a última chamada. O plano nesta ocasião era      de
-                           finalizar a especificação e publicar o HTML 5 em 2012.
-                           Entretanto, a WHATWG percebeu que o HTML 4.01 ainda está       em
-                           alta no mercado e há por grande parte dos desenvolvedores uma boa
-                           demanda por novos recursos para o HTML.
-                           </p>
-                          
-                           <img src="img/html-e-o-novo-html5.jpg" title="HTML é o novo HTML5" alt="HTML é o novo HTML5" />
-                          
-                           <h1>O coração do jQuery</h1>
-                           <p>Para aproveitar de todo o poder do jQuery basta usar o caractere $ e começar a programar.</p>
-                          
-                           <p>O caractere $ é um apelido para o construtor jQuery que pode ser visto no exemplo abaixo:</p>
-                          
-                           <pre>jQuery();</pre>
-                          
-                           <p>
-                           O código acima é o construtor do jQuery. No entanto          para
-                           facilitar o uso do jQuery, uma vez que dentro de todo o    código
-                           JavaScript de um programa usa-se demasiadamente este  construtor,
-                           criou-se um apelido que é justamente o caractere $ que      vimos
-                           anteriormente.</p>
-                       </div>
-                      
-                       <div id="destaque_top_direita">
-                           <h1>Conheça o  CPT</h1>
-                           <iframe title="YouTube video player" width="380" height="320"
-                           src="http://www.youtube.com/embed/3zVuBNfLCAg" frameborder="0"
-                           allowfullscreen></iframe> <span class="legenda">Cursos CPT: Um
-                           facilitador para a sua capacitação profissional. Clique   aqui
-                           para saber mais detalhes.</span>
-                          
-                           <div  id="destuqe_top_direita_especial">
-                               <div class="destaque_top_direita_dividido">
-                                   <h1>Palavras Reservadas do JavaScript</h1>
-                                  
-                                   <p>
-                                   Não é permitido, criar variáveis com nomes de palavras
-                                   reservadas da Linguagem de Programação JavaScript. Veja
-                                   uma lista com todas estas palavras reservadas.</p>
-                               </div>
-                               <div class="destaque_top_direita_dividido">
 
+<meta charset="utf-8" />
+<!-- Definição da codificação de caracteres, neste casa UTF-8. -->
 
-                                   <h1>Qual a diferença entre pseudo classes e pseudo elementos</h1>
+<meta http-equiv="content-language" content="pt" />
+<!-- Definição da Linguagem. Neste caso, definiu-se como PT, que é português. -->
 
+<title>Client-Side: HTML, CSS, JavaScript | Desenvolvimento Web: O céu e o limite:</title>
+<!-- Título da Aba do Navegador. -->
+             
+<meta name="description" content="No Site você vai encontrar artigos
+referentes ao desenvolvimento Web ClientSide como HTML:       HTML5;
+JavaScript; CSS3; e JQuery" />
+<!-- Descrição do Site e entrada de palavra-chave, muito importantes
+para que os site obtenha boa pontuação pelos robôs de busca. -->
 
-                                   <p>
-                                   Ao utilizar ou pesquisar por CSS pseudo-elementos, você pode ter
-                                   encontrado sintaxe diferente para :before ou           ::before,
-                                   especificamente na forma de dois-pontos duplo, em vez dos   dois
-                                   pontos tradicionais único. Isto parece um pouco confuso       no
-                                   início, mas há realmente uma explicação bastante simples.
-                                   </p>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-                   <div id="destaques_bottom">
-                       <div id="destaque_bottom_esquerda">
-                           <h1>Manipulando o DOM utilizando o método jQuery <code>.clone()</code></h1>
-                           <p>
-                           O <code>.clone()</code> é um método que executa uma      cópia
-                           profunda do conjunto de elementos HTML determinado,      o que
-                           significa que ele copia os elementos indicados e todos      os
-                           elementos de seus descendentes e nós de texto.
-                           </p>
-                       </div>
-                       <div id="destaque_bottom_direita">
-                           <img src="img/conheca_os_cursos_cpt.jpg" title="Conheça os CURSOS CPT" alt="Conheça os CURSOS CPT" />
-                           <h1>Conheça os CURSOS CPT</h1>
-                       </div>
-                   </div>
-               </div>
-               <?
-               }else{
-                   include($pag.".html");
-               }?>
-           </div>
-           <div id="rodape">
-               <div id="navegacao">
-                   <div class="rodape_navegacao_itens">
-                       <h1>&lt;html&gt;</h1>
-                       <ul>
-                           <li><a href="index.php?pag=html-e-o-novo-html">HTML é o novo HTML5</a></li>
-                           <li>Tags e elementos</li>
-                           <li>Quando usar os elementos</li>
-                           <li>HTML "b" e "strong"</li>
-                           <li>O HTML em seu dia-a-dia</li>
-                       </ul>
-                   </div>
-                   <div class="rodape_navegacao_itens">
-                       <h1>&lt;style&gt;</h1>
-                       <ul>
-                           <li>Qual a diferença entre pseudo-classes e pseudo-elementos</li>
-                       </ul>
-                   </div>
-                   <div class="rodape_navegacao_itens">
-                       <h1>&lt;script&gt;</h1>
-                       <ul>
-                           <li>Browser Object Model – BOM</li>
-                           <li>Como funciona a função eval do JavaScript</li>
-                           <li>Manipulando o DOM utilizando o método jQuery .clone()</li>
-                           <li>Acessando todos os cabeçalhos de um documento HTML</li>
-                           <li>utilizando jQuery</li>
-                           <li>Colorindo linhas específicas de uma tabela HTML com a ajuda do jQuery</li>
-                           <li>Palavras Reservadas do JavaScript</li>
-                       </ul>
-                   </div>
-                   <div class="rodape_navegacao_itens">
-                       <h1>Acessibilidade Usabilidade SEO</h1>
-                       <ul>
-                           <li>Primeiros Passos no Ambiente INTERNET</li>
-                           <li>Estatísticas dos usuários de browser segundo a w3Schools</li>
-                       </ul>
-                   </div>
-               </div>
-           </div>
-           <div id="direitos_reservados">
-               <hr />
-               © 2021-2023. Todos Os Direitos São Reservados.
-           </div>
-       </div>
-   </body>
-</html>
+<meta name="keywords" content="JavaScript, CSS3, HTML5,   JQuery" />
+             
+<meta name="author" content="Douglas Marcori _ GitHub" >
+<!-- A Tag meta name author, serve para colocar o nome do Autor   do
+Site.-->
+             
+<script type="text/javascript" src="js/comportamento.js O código acima é o construtor do jQuery. No entanto para facilitar o
+uso do jQuery, uma vez que dentro de todo o código JavaScript     de
+um programa usa-se demasiadamente este computador, criou-se       um
+apelido que é justamente o caractere $ que vimos anteriormente   utilizados
+para a estilização e formatação deste documento HTML. -->
+             
+<script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
+<!-- Definição do arquivo JavaScript e CSS, que serão     utilizados
+para a estilização e formatação deste documento HTML. -->
+             
+<link rel="stylesheet" type="text/css" media="screen" href="css/estilos.css" />
+<!-- Definição do arquivo JavaScript e CSS, que serão     utilizados
+para a estilização e formatação deste documento HTML. -->
+                        
+</head>
 
+       <body>
+             
+             <div id="geral">
+                 <div id="cabecalho">
+                     <div id="logotipo">
+                         <a href="/clientside/index.php">
+                            <img src="img/images.jpeg
+                            " title="Logo Client-Side"  alt="Logo Client-Side" border="0" />
+                         </a>
+                     </div>
+                     <div id="menu">
+                         <ul>
+                             <li><a href="/clientside/index.php">motor</a></li>
+                             <li>HTML</li>
+                             <li>CSS</li>                             
+                             <li>JavaScript</li>
+                             <li>jQuery</li>
+                             <li>Acessibilidade</li>
+                             <li>Usabilidade</li>
+                             <li><a href="index.php?pag=fale-conosco">Contato</a></li>                                
+                         </ul>
+                     </div>
+             </div>
+             <div id="corpo">
+                  <? $pag = $_GET['pag'];?>
+                  <? if($pag == ""){?>
+                  <div id="destaques">
+                      <div id="destaques_top">
+                          <div id="destaque_top_esquerda"> O código acima é o construtor do jQuery. No entanto para facilitar o
+                            uso do jQuery, uma vez que dentro de todo o código JavaScript     de
+                            um programa usa-se demasiadamente este computador, criou-se       um
+                            apelido que é justamente o caractere $ que vimos anteriormente
+                              <h1>kaikim preparaçoes</h1>
+                              <p> aqui esta um projeto de uma cg turuna 125cc equipada com um potente motor de yamaha xj6 600cc.
+                                primeiramente para iniciar esse projeto é nescessario reforçar o chassi da moto e remodelar ele, para suportar o peso e a potencia do motor.
+                                e tambem as peças como suspençao,freio,peneus, como eu disse para ter o suporte do motor.
+                                entao aqui a explicaçao. basica do projeto para ver o projeto por completo segue o video abaixo com todas as informaçoes! 
+                              </p>
+             
+             <h1> quanto custa para fazer esse projeto?</h1>
+             <p>
+            para montar um projeto desse o principal obivio, e o motor 600cc da xj6 que nao e muito barato pode variar de 10.000 a 20.000 mil, dependendo da regiao e do estado que o motor se encontra.
+             e o custo das outras peças e da mao de obra pode variar muito, tambem dependendo da regiao agora se for voce mesmo que vai concluir esse projeto ai tera somente os custos das peças.
+             </p>
+             <p>
+             sobre voce mesmo fazer o projeto entendendo sobre o assunto, e so seguir o video que e suscesso!
+             </p>
+                        
+             <p>
+            e sobre a cg turuna ela  vem equipada de fabrica com um motor basico de 125cc, depois de finalizado. esse projeto pode ter certeza que vai chamar a atençao por onde passar! .
+             </p>
+             </div>
+             <div id="destaque_top_direita">
+             <h1>projetim cgzinha turuna</h1>
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/-DRfYaVapAg?si=OCWJWLH4RfwwQj5e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+             allowfullscreen></iframe>
+             <span class="legenda">
+        
+             Clique aqui para saber mais detalhes.
+             </span>
+             <div id="destuque_top_direita_especial">
+             <div class="destaque_top_direita_dividido">
+             <h1>tem como legalizar esse projeto?</h1>
+             <p>
+                Mesmo com a peça em mãos, o dono do veículo ainda precisa de um documento de permissão do DETRAN para autorizá-lo a trocar motor da moto. Para solicitar esse documento, é necessário pagar uma pequena taxa e apresentar os seguintes documentos: Certificado de Registro de Veículo (CRV);.</h1>
+                
+             
+             <hr/>criada por kaiki calassara dos santos 1/12/2023!.                    
+             <!-- Definição da div com id=geral, que vai definir a      estrutura
+             geral do Site. -->
+             </div>
+          </div>
+       </body>
 
 </html>
