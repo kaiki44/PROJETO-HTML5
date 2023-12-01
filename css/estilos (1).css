@@ -33,7 +33,7 @@ pre{
    width: 760px;
    margin: auto;
    text-align: left;
-   --background-color: red;
+   --background-color: rgb(82, 56, 56);
 
  }
    
@@ -47,7 +47,7 @@ padding: 20px;
    
 /*Formatação do menu principal, links internos, home, contatos*/
 #menu{
-   background-color: #9b0000;
+   background-color: #242222;
    color: #ffffff;
    padding: 15px;
 
